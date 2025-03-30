@@ -1,0 +1,65 @@
+/* Основные сбросы и глобальные стили */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --danger-color: #e74c3c;
+  --text-color: #333;
+  --light-gray: #f5f5f5;
+  --dark-gray: #777;
+  --white: #fff;
+  --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--light-gray);
+  padding: 20px;
+}
+
+/* Общие стили для форм */
+input, textarea, select, button {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 8px 12px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+button:disabled {
+  background-color: var(--dark-gray);
+  cursor: not-allowed;
+}
+
+/* Стили для уведомлений */
+.error {
+  color: var(--danger-color);
+  margin: 10px 0;
+}
+
+.success {
+  color: var(--secondary-color);
+  margin: 10px 0;
+}
