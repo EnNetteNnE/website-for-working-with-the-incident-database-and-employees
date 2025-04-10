@@ -36,18 +36,17 @@ const IncidentList: React.FC = () => {
       <table>
         <thead>
           <tr>
-            <th>{'Название' + '\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0'}</th>
-            <th>{'Статус' + '\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0'}</th>
-            <th>Уровень допуска{'\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0'}</th>
-            <th>{'\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0'}</th>
+            <th>Название</th>
+            <th>Статус</th>
+            <th>Уровень допуска</th>
           </tr>
         </thead>
         <tbody>
           {incidents.map((incident) => (
             <tr key={incident.id}>
-              <td>{incident.title + '\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0'}</td>
-              <td>{incident.status + '\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0'}</td>
-              <td>{incident.securityLevel + '\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0'}</td>
+              <td>{incident.title}</td>
+              <td>{incident.status}</td>
+              <td>{incident.securityLevel}</td>
               <td>
                 <Link to={`/incident/${incident.id}`}>Детали</Link>
               </td>
