@@ -20,6 +20,14 @@ const AdminDashboard: React.FC = () => {
       case 'change-employee-password':
         return <EmployeePasswordForm />;
       default:
+        if (!user) {
+            return (
+              <div>
+                <h1>Вы вошли в систему</h1>
+                <Link to="/login">Пожалуйста, войдите в систему</Link>
+              </div>
+            )
+          }
         return (
           <div className="admin-menu">
             <h2>Меню</h2>
