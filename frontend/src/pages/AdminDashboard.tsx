@@ -8,7 +8,7 @@ import EmployeePasswordForm from '../components/EmployeePasswordForm.tsx';
 
 const AdminDashboard: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>('');
-
+  
   const renderTabContent = () => {
     switch (activeTab) {
       case 'change-password':
