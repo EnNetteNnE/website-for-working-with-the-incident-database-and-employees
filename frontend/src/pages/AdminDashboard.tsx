@@ -28,6 +28,7 @@ const AdminDashboard: React.FC = () => {
               </div>
             )
           }
+        
         return (
           <div className="admin-menu">
             <h2>Меню</h2>
