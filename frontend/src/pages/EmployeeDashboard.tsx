@@ -20,7 +20,7 @@ const EmployeeDashboard: React.FC = () => {
         if (!user) {
             return (
               <div>
-                <h1>Вы вошли в систему</h1>
+                <h1>Вы не вошли в систему</h1>
                 <Link to="/login">Пожалуйста, войдите в систему</Link>
               </div>
             )
