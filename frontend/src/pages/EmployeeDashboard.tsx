@@ -17,6 +17,14 @@ const EmployeeDashboard: React.FC = () => {
       case 'add-incident':
         return <IncidentForm />;
       default:
+        if (!user) {
+            return (
+              <div>
+                <h1>Вы вошли в систему</h1>
+                <Link to="/login">Пожалуйста, войдите в систему</Link>
+              </div>
+            )
+          }
         return (
           <div className="employee-menu">
             <h2>Меню</h2>
