@@ -57,8 +57,7 @@ def login():
             'employeeId': employee.id,
             'permissionLevel': employee.access_right.permission_level,
             'firstName': employee.first_name,
-            'lastName': employee.last_name,
-            'token': access_token
+            'lastName': employee.last_name
         }
         
         response = make_response(jsonify(response_data))
